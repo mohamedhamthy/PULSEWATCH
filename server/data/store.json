@@ -1,0 +1,1744 @@
+{
+  "users": [
+    {
+      "id": "user-demo-admin",
+      "name": "PulseWatch Admin",
+      "email": "admin@pulsewatch.app",
+      "passwordHash": "$2b$10$MbX6k973i3FEFLI4BEQyNOrkTo3CIwO/zY13BrzhrPe15WgMTcMiG",
+      "emailVerified": true,
+      "role": "admin",
+      "createdAt": "2026-10-28T20:02:14.963Z",
+      "verificationToken": null
+    }
+  ],
+  "monitors": [
+    {
+      "id": "monitor-docs",
+      "userId": "user-demo-admin",
+      "name": "PulseWatch Docs",
+      "url": "https://example.com",
+      "status": "UP",
+      "lastCheck": "2026-10-28T20:50:00.014Z",
+      "responseTimeMs": 368,
+      "statusCode": 200,
+      "intervalMs": 300000,
+      "timeoutMs": 12000,
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ],
+      "tags": [
+        "docs",
+        "marketing"
+      ],
+      "alertPreferences": [
+        "email"
+      ],
+      "paused": false,
+      "createdAt": "2026-10-28T20:02:14.963Z",
+      "updatedAt": "2026-10-28T20:50:00.382Z",
+      "previousStatus": "UP"
+    },
+    {
+      "id": "monitor-api",
+      "userId": "user-demo-admin",
+      "name": "PulseWatch API",
+      "url": "https://httpbin.org/status/200",
+      "status": "UP",
+      "lastCheck": "2026-10-28T20:50:00.384Z",
+      "responseTimeMs": 1545,
+      "statusCode": 200,
+      "intervalMs": 300000,
+      "timeoutMs": 15000,
+      "expectedStatusCodes": [
+        200,
+        204
+      ],
+      "tags": [
+        "api",
+        "production"
+      ],
+      "alertPreferences": [
+        "email",
+        "slack"
+      ],
+      "paused": false,
+      "createdAt": "2026-10-28T20:02:14.963Z",
+      "updatedAt": "2026-10-28T20:50:01.929Z",
+      "previousStatus": "UP"
+    }
+  ],
+  "checks": [
+    {
+      "id": "c3e7b2a9-207f-434a-bce4-dd90d3b4f392",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1545,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:50:00.384Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "ef0b94a7-b136-472e-97eb-f9c9ba5299b8",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 368,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:50:00.014Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "90afd93b-703c-483c-b389-0ff4766398d1",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1394,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:49:00.207Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "e6d5b7da-a86d-4f2f-9daa-a29f0bd3569f",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 198,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:49:00.006Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "2209a003-18db-4067-8b31-5c785f4cf318",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1270,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:48:00.204Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "185db0cb-f89e-438b-9ee1-aa6abe8e4925",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 185,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:48:00.018Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "444aef0c-5b88-4d14-927c-88d44a856954",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1414,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:47:00.180Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "fd8b7919-da07-4e01-b5fc-0d111410bebe",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 161,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:47:00.016Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "53e88e30-493e-475b-8bfb-14148a9475ac",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1506,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:46:00.202Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "5145bafc-33d2-4f8a-a503-dd16511ea691",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 195,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:46:00.005Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "d1244e5a-7f42-413e-996e-a66624ee6ce2",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1130,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:45:00.269Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "488c8631-efa7-47c7-ae50-c0cd646dd400",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 259,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:45:00.007Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "ebba2a90-7150-4510-b874-be7bf682b51e",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1406,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:44:00.213Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "08368b1c-9cee-4a80-b363-47dcc6727b1a",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 198,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:44:00.014Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "5f0c895e-22cf-4abe-8e1e-7121c7279de0",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1423,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:43:00.162Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "6ff94492-c2d8-4e5c-9805-fee9603b3647",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 156,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:43:00.004Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "ae9be402-8bee-41ac-935a-54080239e1ed",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1524,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:42:00.305Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "ac7fe0d5-9ad3-40f2-9273-8580a26cd471",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 294,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:42:00.009Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "d58b16d0-074c-4e8e-a085-0b924f0ff0bc",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1518,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:41:00.298Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "04d7e194-a3b2-4785-b83f-ce96c970c38c",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 285,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:41:00.011Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "c771a06b-4e43-443c-a187-61e2579538a8",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1500,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:40:00.381Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "d6d28dff-b77e-44de-9492-f601d8516f5c",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 365,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:40:00.014Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "90f478a6-6620-4c6d-bc4e-8c93b7e152ca",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1427,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:39:00.195Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "06f59dae-1b78-4730-a6a9-f58dbf132be3",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 187,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:39:00.006Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "1af58b1b-d497-4e96-b6e9-5a6604906ef6",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1432,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:38:00.219Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "da39ebf1-5b1d-4ad1-ba16-9135ba16d68b",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 206,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:38:00.012Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "c0250371-d6c5-4582-b1ca-8c790d6cb37d",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1450,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:37:00.260Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "ca7b75ce-c7b4-4ac4-9e59-9d4297561d06",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 248,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:37:00.010Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "fb7e4265-f156-454e-9d9e-aee48fcac0e0",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1480,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:36:00.190Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "2db41cfc-69fd-4c8d-a726-7f5cbb0c8f25",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 176,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:36:00.012Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "a9e9271c-2468-489a-95c6-34a25eaff011",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1588,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:35:00.252Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "467d0f8c-d6be-4d8c-b527-45708a10068c",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 230,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:35:00.021Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "ad514f10-814b-4f2d-96d6-62d9f774ba20",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1677,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:34:00.247Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "62bc6873-9be3-4b17-a64f-de4ab2d429f7",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 241,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:34:00.005Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "c43428b1-eb7c-4e69-96c9-41a42f7f061b",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1496,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:33:00.272Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "00938575-3e15-49d2-bd05-6b2a3403aa84",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 257,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:33:00.013Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "a8956d21-62a4-4524-8182-2b228746d9dd",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1387,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:32:00.155Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "83973562-a4f8-4c0d-b694-8365fac7e829",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 149,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:32:00.005Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "819211e6-301e-44d6-875d-bd2d4f521cd5",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1398,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:31:00.187Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "7c2ddc3c-30d9-4da6-b753-1d1ddda7ead7",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 176,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:31:00.009Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "50e4d01d-3b72-4455-9d83-44352c7974d7",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1454,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:30:00.147Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "d5320cdc-cafd-4502-b005-67186511821e",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 140,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:30:00.005Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "a769f003-7ef8-4e3f-b674-80066333968e",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1530,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:29:00.242Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "f0e969b6-5086-40b4-a89f-d820fd4838e8",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 230,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:29:00.011Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "45a3bcd5-802b-49fc-9099-38ea73d423a3",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1964,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:28:00.218Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "9fd2d3b6-20bc-451d-93e2-a735075d0203",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 199,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:28:00.018Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "24eda724-741c-493f-a0dc-1e28a35a2a3f",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1429,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:27:00.157Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "de0720b2-41ab-40c0-b81c-d5cede634c66",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 145,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:27:00.010Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "cdeb0d23-6d73-4ddb-9f64-ed30fbf7f4d0",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1350,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:26:00.159Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "6c18567b-4715-40c7-98d9-d9ca15a2a81a",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 146,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:26:00.011Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "910f7124-d48e-48d5-babc-a7bcc5e107ac",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1602,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:25:00.269Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "34f3bc02-beae-480b-a81c-4db795a1674c",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 251,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:25:00.016Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "98acc853-c30c-442b-b3b1-42e9611d23cc",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1511,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:24:00.261Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "73dba830-5d6e-4746-8f72-98951628e16d",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 246,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:24:00.013Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "e746fdb4-7fb9-4597-bbf0-1c32dd90701d",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1450,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:23:00.135Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "b6904cc6-fdb1-46ac-a8f9-8a411409d516",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 115,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:23:00.017Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "f345619c-b3f9-4562-932e-9df07e61d58a",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1398,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:22:00.238Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "69dbda6f-ab47-4eb3-bae9-b0c8fc1df682",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 229,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:22:00.007Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "76408625-8920-4d84-87e3-3affb07c8302",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1505,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:21:00.176Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "fc79ff2d-87e1-4f6c-9670-5e843ad08adf",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 164,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:21:00.011Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "2add863b-f771-4b38-ae4a-9f9b1baf06a2",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 3491,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:20:01.863Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "a5fb0873-1a23-4345-bfe4-d17d91af5123",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 1848,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:20:00.013Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "bbde6e5d-beb4-40ae-a5fc-59aa1d5463de",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 2459,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:19:00.434Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "f6cef630-461a-413b-b3bd-55e9304c2069",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 417,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:19:00.016Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "709d327d-4fc7-4366-8573-676d24a05bd5",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1671,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:18:00.237Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "62311893-0daf-480a-a7c0-cdbebca946d3",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 226,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:18:00.010Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "2d1e39d8-78fd-4f95-9a6a-9689448eb3a0",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 3358,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:17:02.706Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "0f8266c4-8001-459a-bca5-50b45ba09e36",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 2682,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:17:00.020Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "e6a32fb6-b569-4795-a261-158e546d39fa",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 2838,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:16:02.022Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "8539cd01-94fc-4996-b9f1-6cbf44bdeb33",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 2018,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:16:00.002Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "ec5e48d5-900c-494f-ac53-f820af2af649",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1513,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:15:00.271Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "46c13b7b-732c-4a28-a04c-373162cae3b5",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 257,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:15:00.013Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "9a9d98be-a345-46a6-893a-84be8007247f",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1524,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:14:00.193Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "9b7de42b-9224-49ae-8722-07fb0dbd4f3d",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 174,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:14:00.017Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "f34c0fb1-78a6-4163-9516-22f7a787bf44",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1577,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:13:00.140Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "c72f526d-8c22-4db1-85f0-c9929721e02b",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 118,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:13:00.021Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "d2b526cc-04ec-4eb7-8e8a-36ab4bb17242",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1387,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:12:00.198Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "7ea67674-d8ae-49b5-b925-7010cfa0fffb",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 187,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:12:00.010Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "19c9d000-d39c-4c1c-b947-3793dc8fea83",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1426,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:11:00.172Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "4fd7ca3d-9626-4871-aa79-aab5c6c13d63",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 156,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:11:00.014Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "34fed402-5024-4f9e-9b2e-af0be1fb4866",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1478,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:10:00.214Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "cdb62dbe-dbb0-432e-8fce-343fbd86ccde",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 197,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:10:00.015Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "278d8049-f4ba-4a1e-8c32-368f1f22979e",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 2094,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:09:00.704Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "2c761861-97af-44bc-bb7d-a5e7a5221435",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 690,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:09:00.012Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "235d6f13-f490-4f05-a872-6fd14860d04a",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1405,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:08:00.154Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "87a78de5-dc9b-4ef0-9ba3-17d48ffb843a",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 138,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:08:00.014Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "d2c75329-55a0-4709-92e5-f0005e7d8e51",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1471,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:07:00.188Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "704f3c09-ba33-4d62-a919-33695a6b2212",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 174,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:07:00.012Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "a21d6b06-c62e-47ab-8f56-9c64a5e67219",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1432,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:06:00.195Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "3856a96c-80ab-4025-b810-2a3d9070ee93",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 184,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:06:00.009Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "8b7b85f3-4937-47b9-bc93-548e05f2604a",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1427,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:05:00.146Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "7e88b42a-59dc-4e73-a608-4e5051c9d397",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 137,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:05:00.008Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "7ce2e491-bc46-4216-9c95-273077e42693",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 1416,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:04:00.162Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "4c88d604-3595-4ed3-b765-a9ac43a92318",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 152,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:04:00.009Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "d6bf78ea-8f40-4952-92fc-a4d65cadc739",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 2053,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:03:00.407Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    },
+    {
+      "id": "9b0dedbb-f660-457d-af55-9cd69ee65c58",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 386,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:03:00.019Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "775527fe-99e7-4f8b-98f1-a806dcb7d1ff",
+      "monitorId": "monitor-docs",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://example.com",
+      "responseTimeMs": 220,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:02:14.964Z",
+      "expectedStatusCodes": [
+        200,
+        201,
+        202,
+        204,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "14d9498e-07b9-4473-b4f5-37416a72c381",
+      "monitorId": "monitor-api",
+      "userId": "user-demo-admin",
+      "status": "UP",
+      "url": "https://httpbin.org/status/200",
+      "responseTimeMs": 340,
+      "statusCode": 200,
+      "error": null,
+      "checkedAt": "2026-10-28T20:02:14.964Z",
+      "expectedStatusCodes": [
+        200,
+        204
+      ]
+    }
+  ],
+  "incidents": []
+}
